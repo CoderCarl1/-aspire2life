@@ -1,8 +1,13 @@
-# Getting Started with Create React App
+# Aspire 2 Life
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Aspire 2 Life provides individual Case management, Supporting, and coordination services to enhance life at home for:
 
-## Available Scripts
+- Home care package; and
+- participants in NDIS.
+
+Navigating life's twists and turns to get on the direction you want to be in.
+
+## Written with React
 
 In the project directory, you can run:
 

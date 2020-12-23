@@ -1,35 +1,27 @@
 import React from 'react'
+//imported Styles
 import styled from 'styled-components'
+import { Navigation } from '../styles/styles'
 
 const Nav = () => {
     return (
         <Navigation>
             <ul>
-                <li>Logo</li>
-                <li>About</li>
-                <li>Services</li>
-                <li>Contact Us</li>
+                <li>
+                    <a>Logo</a>
+                </li>
+                <li>
+                    <a>About</a>
+                </li>
+                <li>
+                    <a>Services</a>
+                </li>
+                <li>
+                    <a>Contact Us</a>
+                </li>
             </ul>
         </Navigation>
     )
 }
-
-const Navigation = styled.nav`
-    border: 1px solid red;
-    height: 10vh;
-    min-width: 100vw;
-    ul {
-        display: flex;
-        list-style: none;
-        li {
-            background: white;
-            color: black;
-            &:hover {
-                background: blue;
-                color: white;
-            }
-        }
-    }
-`
 
 export default Nav

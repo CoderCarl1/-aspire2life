@@ -1,30 +1,24 @@
 //import packages
-import React from 'react'
+import React, { useState } from 'react'
+import { Switch, Route } from 'react-router-dom'
+//import styles
+import './styles/styles.scss'
+import GlobalStyle from './styles/GlobalStyle'
+//import components/pages
 import Nav from './components/Nav'
-
-//import components
+import Faq from './pages/FAQ'
+//import data
+import { faqData } from './data/faq'
 
 function App() {
-    return (
-        <div>
-            <Nav />
-            <h1>Header</h1>
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis,
-                ut quos perspiciatis nesciunt exercitationem earum voluptate.
-                Unde ea est culpa!
-            </p>
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis,
-                ut quos perspiciatis nesciunt exercitationem earum voluptate.
-                Unde ea est culpa!
-            </p>
+    const [faqs, setFaqs] = useState(faqData())
 
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis,
-                ut quos perspiciatis nesciunt exercitationem earum voluptate.
-                Unde ea est culpa!
-            </p>
+    return (
+        <div className="app">
+            <GlobalStyle />
+            <Nav />
+
+            <Faq faqs={faqs} />
         </div>
     )
 }
