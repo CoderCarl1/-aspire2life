@@ -1,24 +1,35 @@
 //import packages
-import React, { useState } from 'react'
+import React from 'react'
 import { Switch, Route } from 'react-router-dom'
 //import styles
 import './styles/styles.scss'
 import GlobalStyle from './styles/GlobalStyle'
 //import components/pages
 import Nav from './components/Nav'
+import Home from './pages/Home'
 import Faq from './pages/FAQ'
-//import data
-import { faqData } from './data/faq'
+import Services from './pages/Services'
+import ContactUs from './pages/ContactUs'
 
 function App() {
-    const [faqs, setFaqs] = useState(faqData())
-
     return (
         <div className="app">
             <GlobalStyle />
             <Nav />
-
-            <Faq faqs={faqs} />
+            <Switch>
+                <Route exact path="/">
+                    <Home />
+                </Route>
+                <Route exact path="/faqs">
+                    <Faq />
+                </Route>
+                <Route exact path="/services">
+                    <Services />
+                </Route>
+                <Route exact path="/contact-us">
+                    <ContactUs />
+                </Route>
+            </Switch>
         </div>
     )
 }

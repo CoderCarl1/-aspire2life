@@ -1,19 +1,24 @@
-import React from 'react'
-import FaqComponent from '../components/FaqCard'
+import React, { useState } from 'react'
+import FaqCard from '../components/FaqCard'
 //imported styles
 import styled from 'styled-components'
-import { Section } from '../styles/styles'
+import { Main } from '../styles/styles'
+//import data
+import { faqData } from '../data/data'
 
-const FAQ = ({ faqs }) => {
-    const FAQS = faqs.map((faq) => <FaqComponent faq={faq} key={faq.id} />)
+const FAQ = () => {
+    const [faqs, setFaqs] = useState(faqData())
+    const FAQS = faqs.map((faq) => (
+        <FaqCard faq={faq} key={faq.id.toString()} />
+    ))
 
     return (
-        <Section>
+        <Main id="main-content">
             <h2>
                 Any Questions? <span>FAQ</span>
             </h2>
             {FAQS}
-        </Section>
+        </Main>
     )
 }
 

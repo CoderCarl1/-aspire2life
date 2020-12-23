@@ -8,11 +8,14 @@ const GlobalStyle = createGlobalStyle`
 }
 
 body{
-    background: #1b1b1b;
+    background: #ffffff;
     font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    
 }
 
-button{
+/* button{
     font-weight: bold;
     font-size: 1.1rem;
     cursor: pointer;
@@ -26,7 +29,7 @@ button{
     &:hover{
         background-color: #23d997
     }
-}
+} */
 
 h2{
     font-weight: lighter;
@@ -52,6 +55,6 @@ p{
     font-size: 1.4rem;
     line-height: 150%;
 }
-
-
 `
+
+export default GlobalStyle

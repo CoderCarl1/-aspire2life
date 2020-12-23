@@ -24,10 +24,19 @@ export function faqData() {
                 'answer4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, iste?',
             id: 4,
         },
+        {
+            question: 'How much will it cost?',
+            answer:
+                'answer5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, iste?',
+            id: 5,
+        },
     ]
 }
 export function serviceData(){
     return[
-        id: 1, description: 'word1', img: 
+        {id: 1, description: 'word1', img: 'image1'},
+        {id: 2, description: 'word2', img: 'image2'},
+        {id: 3, description: 'word3', img: 'image3'},
+        {id: 4, description: 'word4', img: 'image4'}
     ]
 }

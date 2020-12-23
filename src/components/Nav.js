@@ -1,26 +1,33 @@
+//import packages
 import React from 'react'
+import { Link } from 'react-router-dom'
 //imported Styles
 import styled from 'styled-components'
-import { Navigation } from '../styles/styles'
+import { StyledNav } from '../styles/styles'
 
 const Nav = () => {
     return (
-        <Navigation>
+        <StyledNav>
+            <Link to="/">
+                <h2 id="logo">Logo</h2>
+            </Link>
+
             <ul>
                 <li>
-                    <a>Logo</a>
+                    <Link to="/">Home</Link>
                 </li>
                 <li>
-                    <a>About</a>
+                    <Link to="/faqs">faqs</Link>
+                </li>
+
+                <li>
+                    <Link to="/services">Services</Link>
                 </li>
                 <li>
-                    <a>Services</a>
-                </li>
-                <li>
-                    <a>Contact Us</a>
+                    <Link to="/contact-us">Contact Us</Link>
                 </li>
             </ul>
-        </Navigation>
+        </StyledNav>
     )
 }
 
