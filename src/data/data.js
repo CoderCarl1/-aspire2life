@@ -32,11 +32,11 @@ export function faqData() {
         },
     ]
 }
-export function serviceData(){
-    return[
-        {id: 1, description: 'word1', img: 'image1'},
-        {id: 2, description: 'word2', img: 'image2'},
-        {id: 3, description: 'word3', img: 'image3'},
-        {id: 4, description: 'word4', img: 'image4'}
+export function serviceData() {
+    return [
+        { id: 1, description: 'word1', img: 'image1' },
+        { id: 2, description: 'word2', img: 'image2' },
+        { id: 3, description: 'word3', img: 'image3' },
+        { id: 4, description: 'word4', img: 'image4' },
     ]
 }
